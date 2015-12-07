@@ -9,4 +9,3 @@ public interface SearchEngine {
     public List<Document> findByType(Type documentType);
     public List<Document> listAll();
 }
-//인터페이스 메서드만 선언가능 

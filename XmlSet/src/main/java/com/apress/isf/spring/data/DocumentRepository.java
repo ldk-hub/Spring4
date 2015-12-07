@@ -3,6 +3,7 @@ package com.apress.isf.spring.data;
 import com.apress.isf.java.model.Document;
 
 public class DocumentRepository implements DocumentDAO {
+	//문서 4개를 정의한다. 각각데이터를 넣을 공간이다.
 	private Document doc1;
 	private Document doc2;
 	private Document doc3;

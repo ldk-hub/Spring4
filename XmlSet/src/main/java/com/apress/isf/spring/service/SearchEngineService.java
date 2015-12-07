@@ -12,15 +12,16 @@ import com.apress.isf.spring.data.DocumentDAO;
 public class SearchEngineService implements SearchEngine {
 
 	private DocumentDAO documentDAO;
+	//DAO와 의존관계 선언
 
 	public DocumentDAO getDocumentDAO() {
 		return documentDAO;
 	}
-
+	//세터메서드를 통해 주입
 	public void setDocumentDAO(DocumentDAO documentDAO) {
 		this.documentDAO = documentDAO;
 	}
-
+	
 	public List<Document> findByType(Type documentType) {
 		List<Document> result = new ArrayList<Document>();
 		for (Document doc : listAll()) {
