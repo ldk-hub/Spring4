@@ -18,7 +18,7 @@ public class MyDocumentsWithLoginTest {
 	private static final String SUCCESS = "해당유저는 로그인이 되었습니다.라는 로그테스트";
 	private static final String FAILURE = "실패했을경우의 출력결과지롱";
 	private ClassPathXmlApplicationContext context;
-
+	//ss
 	@Before
 	public void setup() {
 		context = new ClassPathXmlApplicationContext("META-INF/spring/mydocuments-login-context.xml");
