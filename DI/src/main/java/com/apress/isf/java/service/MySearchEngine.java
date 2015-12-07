@@ -6,9 +6,10 @@ import java.util.List;
 import com.apress.isf.java.model.Document;
 import com.apress.isf.java.model.Type;
 
+//SearchEngine인터페이스에서 정의한 구현체를 상속받아 기능을 정의한다.
 public class MySearchEngine implements SearchEngine {
 	
-    @Override
+    @Override// 상속정의 애너테이션  SearchEngine에서 정의한 findByType에 대한 기능을 정의 
     public List<Document> findByType(Type documentType) {
         List<Document> result = new ArrayList<Document>();
         for (Document document : storage()) {

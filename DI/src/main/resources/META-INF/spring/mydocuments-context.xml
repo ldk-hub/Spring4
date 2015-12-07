@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- 이 xml부분은 스프링 프레임워크가 의존성과 객체사이의 상호작용을 주입하기위해 알아야할 성정이다. beans는 자식태그 하나이상 선언가능. -->
+<!-- 이 xml부분은 스프링 프레임워크가 의존성과 객체사이의 상호작용을 주입하기위해 알아야할 성정이다. beans는 자식태그 하나이상 
+	선언가능. -->
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 	    http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="engine" class="com.apress.isf.java.service.MySearchEngine" />
-  
-  <bean id="documentType" class="com.apress.isf.java.model.Type">
-    <property name="name" value="WEB" />
-    <property name="desc" value="Web Link" />
-    <property name="extension" value=".url" />
-  </bean>
-    
+	<!-- 클래스내 빈정의 경로 지정 및 url설정 등 -->
+	<bean id="engine" class="com.apress.isf.java.service.MySearchEngine" />
+
+	<bean id="documentType" class="com.apress.isf.java.model.Type">
+		<property name="name" value="WEB" />
+		<property name="desc" value="Web Link" />
+		<property name="extension" value=".url" />
+	</bean>
+
 </beans>

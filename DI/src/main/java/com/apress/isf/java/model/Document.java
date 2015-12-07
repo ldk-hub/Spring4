@@ -1,7 +1,7 @@
 package com.apress.isf.java.model;
 
 public class Document {
-
+	//데이터 형식 정의
 	private String name;
 	private Type type;
 	private String location;

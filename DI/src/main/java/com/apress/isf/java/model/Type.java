@@ -2,9 +2,12 @@ package com.apress.isf.java.model;
 
 public class Type {
 
+	
+	//데이터 형식 정의 자동 겟셋 할 것 일일이 타이핑 X
 	private String name;
 	private String desc;
 	private String extension;
+	
 	public String getName() {
 		return name;
 	}

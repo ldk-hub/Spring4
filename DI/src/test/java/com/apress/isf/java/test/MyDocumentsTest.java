@@ -11,7 +11,8 @@ import com.apress.isf.java.service.MySearchEngine;
 import com.apress.isf.java.service.SearchEngine;
 
 public class MyDocumentsTest {
-	
+	//JUnit 으로  각  클래스마다 log를 심었는데 그 log를 호출하여 정상적으로 Test해보는 것으로 추후 각 메서드 별 기능에 대해 학습 진행예정
+	//유닛테스트
     private SearchEngine engine = new MySearchEngine();
 
     @Test
