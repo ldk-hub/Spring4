@@ -12,7 +12,7 @@ import com.apress.isf.java.model.Type;
 import com.apress.isf.java.service.SearchEngine;
 import com.apress.isf.spring.data.DocumentDAO;
 
-@Service("engine")
+@Service("engine")//컨테이너가 engine인 id값을 생성 해당 빈은 AnnotatedSearchEngine을 가르킨다는 선언
 public class AnnotatedSearchEngine implements SearchEngine {
 
 	@Autowired

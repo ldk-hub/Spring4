@@ -5,7 +5,7 @@
 		http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context
 		http://www.springframework.org/schema/context/spring-context-4.0.xsd">
-
+	<!--  base-package="com.apress.isf.spring.annotated 의 경로내 애너테이션을 찾도록한다. -->
 	<context:component-scan base-package="com.apress.isf.spring.annotated" />
 
 	<bean id="webType" class="com.apress.isf.java.model.Type">

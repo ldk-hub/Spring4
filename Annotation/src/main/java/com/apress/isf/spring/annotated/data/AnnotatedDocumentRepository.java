@@ -9,7 +9,7 @@ import com.apress.isf.java.model.Document;
 import com.apress.isf.java.model.Type;
 import com.apress.isf.spring.data.DocumentDAO;
 
-@Repository("documentDAO")
+@Repository("documentDAO")//@Autowired애너테이션을 포함하는 SearchEngine구현체에 주입시키는 에너테이션
 public class AnnotatedDocumentRepository implements DocumentDAO {
 
     public Document[] getAll() {
