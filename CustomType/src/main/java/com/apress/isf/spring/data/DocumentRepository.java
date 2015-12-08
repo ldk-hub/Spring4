@@ -22,8 +22,8 @@ public class DocumentRepository implements DocumentDAO {
 		this.documents = documents;
 	}
 
-	public Document[] getAll() {
-		if (log.isDebugEnabled())
+	public Document[] getAll() { 
+		if (log.isDebugEnabled())//로그를 Document배열에 심어 실행될때 정상적으로 구동되는지 유닛 테스트를 할 수 있다.
 			log.debug("Start <getAll> Params: ");
 		Document[] result = documents.toArray(new Document[documents.size()]);
 
